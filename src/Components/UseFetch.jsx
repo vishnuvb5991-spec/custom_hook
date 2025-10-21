@@ -19,8 +19,8 @@ import React, { useEffect, useState } from 'react'
     useEffect(()=>{
         fetch(url).then((res)=>res.json())
         .then((data)=>setData(data))
-    },[])
-  return [data]
+    },[]);
+  return [data];
 }
 
 export default useFetch;
